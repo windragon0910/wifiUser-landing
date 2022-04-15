@@ -38,11 +38,14 @@ h2 {
   .bg.md-right {
     min-height: 500px;
     width: 100% !important;
-    padding: 100px;
+    padding: 100px 10px 200px;
   }
   .logo_container {
     width: 100% !important;
     text-align: center;
+  }
+  .bg_content {
+    margin: auto;
   }
   .md-right,
   .md-left {
@@ -51,6 +54,7 @@ h2 {
     max-width: 100% !important;
   }
   .bottom_bar {
+    margin-top: 10px !important;
     display: block !important;
     text-align: center;
     height: fit-content;
@@ -73,6 +77,23 @@ h2 {
   .phone_no_container {
     display: block !important;
     text-align: left;
+  }
+  .bg_imgs .vector {
+    display: none;
+  }
+  .bg_imgs .man_antena {
+    height: 60%;
+  }
+  .buildings_bg {
+    width: 100% !important;
+  }
+  .wifi_bg {
+    width: 30%;
+  }
+  .buildings_bg,
+  .wifi_bg {
+    left: 50% !important;
+    transform: translate(-50%, 30%);
   }
 }
 
@@ -99,17 +120,31 @@ h2 {
   background-color: #fff1f1;
   z-index: -2;
 }
-.vector {
-  left: 0;
+.bg_imgs {
+  max-width: 100%;
+  overflow: hidden;
+}
+.bg_imgs img {
   z-index: -1;
-  bottom: 0;
   position: absolute;
 }
-.signin_bg {
-  position: absolute;
+.vector {
+  left: 0;
+  bottom: 0;
+}
+.buildings_bg {
+  top: 50px;
+  left: 0;
+  width: -webkit-fill-available;
+}
+.wifi_bg {
+  top: 20px;
+  right: 60px;
+}
+.man_antena {
   bottom: 0;
   right: 0;
-  z-index: -1;
+  height: 80%;
 }
 .bg_content {
   display: flex;
