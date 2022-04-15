@@ -228,7 +228,7 @@ div.content {
 }
 
 .left-content {
-  width: 65%;
+  width: 70%;
 }
 
 .left-content-title {
@@ -238,7 +238,7 @@ div.content {
 .left-payment-content {
   background: white;
   margin: 20px 20px 10px 0px;
-  padding: 15px 30px 15px 15px;
+  padding: 15px 3% 15px 15px;
   display: flex;
   justify-content: space-between;
 }
@@ -276,15 +276,83 @@ div.content {
 }
 
 .right-content {
-  width: 35%;
+  width: 30%;
 }
 
 .right-content-title {
   font-size: 20px;
 }
 
+.right-payment-content {
+  background: white;
+  margin-top: 21px
+}
+
+.right-payment-top-padding {
+  padding: 20px;
+}
+
+.right-payment-top {
+  background: #FFF1F1;
+  padding: 20px;
+  display: flex;
+}
+
+.right-payment-img {
+  background: white;
+  color: red;
+  padding: 15px;
+  width: fit-content;
+}
+
+.right-payment-img-text {
+  font-size: 14px;
+  margin-left: 20px;
+}
+
+.right-payment-bottom-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 7px 0px;
+  font-size: 14px;
+}
+
+.right-payment-bottom-line {
+  flex: 1;
+  height: 1px;
+  margin: 15px 0px;
+  background-size: 5px 1px;
+  background-image: linear-gradient(to right, black 33%, rgba(255,255,255,0) 0%);
+  background-repeat: repeat-x;
+  background-position: bottom;
+}
+
+.right-payment-bottom-button {
+  background: black;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  padding: 6px;
+  margin: auto;
+}
+
+.right-payment-bottom-text {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.right-payment-bottom-subtext {
+  text-align: center;
+  font-size: 12px;
+}
+
 .d-flex {
   display: flex;
+}
+
+.d-color-red {
+  color: red;
 }
 
 /* ---------------------------------- */
