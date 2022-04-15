@@ -1,17 +1,16 @@
 @media (max-width: 991.98px) {
-  .otp_download_str {
+  .reminder_download_str {
     margin: 20px auto 10px !important;
   }
 
-  .otp_side_bg img {
+  .reminder_side_bg img {
     content: url("../images/phone_img.png") !important;
   }
-  .verify_content h2 {
-    text-align: center !important;
-    margin: auto !important;
+  .reminder .bg {
+    padding: 150px 100px !important;
   }
 }
-.otp_download_str {
+.reminder_download_str {
   text-align: left;
   color: white;
   font-size: 24px;
@@ -21,36 +20,33 @@
   margin: 40px auto 10px;
   width: fit-content;
 }
-.otp_download_str a {
+.reminder_download_str a {
   color: black !important;
   text-decoration: none;
 }
-.otp_download_description {
+.reminder_download_description {
   color: white;
   font-size: 18px;
   text-align: left;
   padding: 0 30px;
 }
-.contents.otp {
+.reminder .contents {
   padding: 10px 0 0;
 }
-.otp_side_bg {
+.reminder_side_bg {
   z-index: 1;
   margin-top: 30px;
 }
-.otp_description {
+.reminder_description {
   font-size: 18px;
 }
-.otp_description a {
-  color: red !important;
-  text-decoration: none;
-}
-.verify_content {
+.reminder_content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 350px;
-  height: 350px;
+  height: fit-content;
+  margin: auto;
 }
 .code_container input {
   padding: 10px;
@@ -58,17 +54,27 @@
   background: white;
   border: none;
 }
-.btn_continer .btn_global {
-  padding: 10px 30px;
+.btn_global {
+  padding: 10px 30px !important;
+  width: fit-content;
+  margin-top: 30px;
+  margin-left: 0 !important;
 }
-.btn_continer p {
-  margin: auto !important;
-}
-.btn_continer,
 .code_container {
   display: flex;
   justify-content: space-around;
 }
-.otp_page .bg_lightpink.md-right {
+.reminder_page .bg_lightpink.md-right {
   padding: 50px 100px !important;
+}
+.img_alert {
+  width: fit-content !important;
+  margin-bottom: 30px;
+}
+.reminder_alert {
+  font-size: 18px !important;
+  font-weight: bold;
+}
+.reminder .bg {
+  padding: 50px 100px;
 }

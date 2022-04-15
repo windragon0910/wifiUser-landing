@@ -1,0 +1,56 @@
+@media (max-width: 991.98px) {
+  .info_line {
+    display: block !important;
+  }
+  .profile_setup .bg_lightpink.md-right {
+    padding: 100px 100px !important;
+    height: min-content !important;
+  }
+}
+.profile_side_bg img {
+  width: 100%;
+  height: auto;
+}
+.profile_side_bg {
+  width: -webkit-fill-available;
+}
+.profile_setup .bg_content {
+  min-height: fit-content !important;
+  height: fit-content;
+}
+.profile_setup .bg_lightpink.md-right {
+  padding: 50px 100px;
+  min-height: fit-content !important;
+}
+.profile_content .btn_global {
+  padding: 10px 30px !important;
+}
+.profile_content {
+  width: fit-content;
+}
+.profile_content h1 {
+  margin-left: 10px;
+}
+.profile_description {
+  font-size: 14px !important;
+  color: grey;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+.info_line div {
+  margin: 0 10px;
+}
+.info_line label {
+  font-weight: 500;
+}
+.info_line {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+}
+.info_container {
+  text-align: center;
+}
+.btn_continer {
+  margin-top: 15px;
+}

@@ -30,11 +30,7 @@ a:hover {
   padding: 7rem 0;
 }
 
-h2 {
-  font-size: 20px;
-}
-
-@media (max-width: 960px) {
+@media (max-width: 991.98px) {
   .bg.md-right {
     min-height: 500px;
     width: 100% !important;
@@ -46,6 +42,7 @@ h2 {
   }
   .bg_content {
     margin: auto;
+    width: 100%;
   }
   .md-right,
   .md-left {
@@ -69,7 +66,7 @@ h2 {
   .container {
     padding-top: 0 !important;
   }
-  .btn_continue {
+  .btn_global {
     margin-left: 0 !important;
     margin-top: 15px;
     padding: 10px 20px !important;
@@ -238,6 +235,7 @@ h2 {
   flex-direction: row-reverse;
 }
 .bottom_bar {
+  z-index: 10;
   display: flex;
   font-weight: unset;
   background: black;
@@ -278,7 +276,7 @@ h2 {
   width: -webkit-fill-available;
   border: none;
 }
-.btn_continue {
+.btn_global {
   background-color: black;
   text-align: center;
   color: white;
