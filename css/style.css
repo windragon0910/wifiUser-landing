@@ -89,6 +89,7 @@ h2 {
   }
   .wifi_bg {
     width: 30%;
+    height: auto !important;
   }
   .buildings_bg,
   .wifi_bg {
@@ -140,6 +141,7 @@ h2 {
 .wifi_bg {
   top: 20px;
   right: 60px;
+  height: 60%;
 }
 .man_antena {
   bottom: 0;
@@ -187,24 +189,29 @@ h2 {
   background-color: red;
   padding-top: 20px;
 }
-.side_bg {
+.login_side_bg {
   text-align: center;
   margin: 60px auto;
 }
-.side_bg img {
+.login_side_bg img {
   width: 200px;
   margin: auto;
 }
-.download_str a {
+
+.login_download_str a {
   color: white !important;
   text-decoration: none;
 }
-.download_str {
+.login_download_str {
   text-align: center;
   color: black;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 900;
   padding: 20px;
+  font-family: sans-serif;
+}
+.col-md-10 {
+  text-align: center;
 }
 .download_connecting div {
   padding: 3px;

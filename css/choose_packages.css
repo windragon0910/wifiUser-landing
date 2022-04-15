@@ -1,0 +1,31 @@
+@media (max-width: 960px) {
+  .choose_download_str {
+    margin: 20px auto 10px !important;
+  }
+}
+.choose_download_str {
+  text-align: left;
+  color: white;
+  font-size: 24px;
+  font-weight: 900;
+  padding: 20px;
+  font-family: sans-serif;
+  margin: 60px auto 10px;
+  width: fit-content;
+}
+.choose_download_str a {
+  color: black !important;
+  text-decoration: none;
+}
+.choose_download_description {
+  color: white;
+  font-size: 18px;
+  text-align: left;
+  padding: 0 30px;
+}
+.contents.choose {
+  padding: 10px 0 0;
+}
+.choose_side_bg {
+  margin-top: 50px;
+}
