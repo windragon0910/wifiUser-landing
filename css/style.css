@@ -29,7 +29,28 @@ a:hover {
 .content {
   padding: 7rem 0;
 }
-
+@media (max-width: 360px) {
+  .download_connecting div img {
+    width: 95% !important;
+    height: auto;
+  }
+  .bottom_bar img {
+    margin: auto !important;
+  }
+}
+@media (max-width: 560px) {
+  .bottom_bar {
+    padding: 10px !important;
+  }
+  .download_connecting div {
+    margin: 5px !important;
+  }
+  .contents.md-left {
+    width: 100% !important;
+    height: fit-content !important;
+    overflow: hidden;
+  }
+}
 @media (max-width: 991.98px) {
   .bg.md-right {
     min-height: 500px;
@@ -63,7 +84,7 @@ a:hover {
     display: flex;
     justify-content: center !important;
   }
-  .container {
+  .page_container {
     padding-top: 0 !important;
   }
   .btn_global {
@@ -95,20 +116,14 @@ a:hover {
   }
 }
 
-.contents {
-  min-width: 30%;
-  max-width: 40%;
-  padding: 10px 0 50px;
-  width: -webkit-fill-available;
+.contents.md-left {
+  width: 38%;
+  height: calc(100vh - 60px);
+  overflow: hidden;
 }
 .page_wrapper {
   min-height: 100vh;
   padding: auto;
-}
-.bg {
-  max-width: 65%;
-  width: -webkit-fill-available;
-  padding: 100px 100px 50px;
 }
 .bg_red {
   background-color: red;
@@ -150,7 +165,7 @@ a:hover {
   flex-direction: column;
   justify-content: space-between;
   width: 350px;
-  height: 450px;
+  height: fit-content;
 }
 .phone_info_div h4 {
   font-weight: 600;
@@ -175,16 +190,21 @@ a:hover {
   width: 80px;
   height: auto;
 }
-.contents,
 .main_page .md-right {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  min-width: 62%;
+  padding: 100px 100px 50px;
+  z-index: 20 !important;
 }
-.contents,
-.container {
+.page_container .row,
+.page_container .col-md-10,
+.page_container {
   background-color: red;
   padding-top: 20px;
+
+  height: 100%;
 }
 .login_side_bg {
   text-align: center;
@@ -209,11 +229,14 @@ a:hover {
 }
 .col-md-10 {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .download_connecting div {
   padding: 3px;
   background-color: black;
-  margin: 10px;
+  margin: 3px;
 }
 .download_connecting a {
   padding: 2px;
@@ -252,12 +275,13 @@ a:hover {
   color: white;
   margin: 2px 15px;
 }
-.bottom_bar .md-right {
+.page_wrapper .bottom_bar .md-right {
   margin-left: auto;
   margin-right: 15px;
   display: flex;
   justify-content: flex-end;
   text-align: center;
+  padding: 0 !important;
 }
 .logo_container {
   position: absolute;
@@ -265,6 +289,7 @@ a:hover {
   left: 0;
   padding: 20px;
   background-color: red;
+  z-index: 50;
 }
 .main_page {
   min-height: calc(100vh - 60px);
@@ -288,4 +313,11 @@ a:hover {
 .phone_no_container {
   display: flex;
   justify-content: space-between;
+}
+.main_page input[type="number"]::-webkit-outer-spin-button,
+.main_page input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.main_page input[type="number"] {
+  -moz-appearance: textfield !important;
 }

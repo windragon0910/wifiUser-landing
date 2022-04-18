@@ -1,4 +1,21 @@
+@media (max-width: 360px) {
+  .otp_page .verify_content {
+    width: 90% !important;
+  }
+}
+@media (max-width: 560px) {
+  .otp_page .bg_lightpink.md-right {
+    padding: 50px 30px !important;
+  }
+  .verify_content {
+    width: 300px !important;
+  }
+}
 @media (max-width: 991.98px) {
+  .verify_content {
+    margin: auto !important;
+    width: 400px !important;
+  }
   .otp_download_str {
     margin: 20px auto 10px !important;
   }
@@ -8,8 +25,14 @@
   }
   .verify_content h2 {
     text-align: center !important;
-    margin: auto !important;
+    margin: 30px auto !important;
   }
+  .otp_page .md-right {
+    padding: 50px 100px !important;
+  }
+}
+.verify_content {
+  width: 400px;
 }
 .otp_download_str {
   text-align: left;
@@ -32,11 +55,12 @@
   padding: 0 30px;
 }
 .contents.otp {
-  padding: 10px 0 0;
+  padding: 0;
 }
 .otp_side_bg {
   z-index: 1;
   margin-top: 30px;
+  width: 100%;
 }
 .otp_description {
   font-size: 18px;
@@ -49,14 +73,24 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 350px;
-  height: 350px;
+  height: fit-content;
+}
+.code_container input:last-child {
+  margin-right: 0 !important;
 }
 .code_container input {
   padding: 10px;
   color: black;
   background: white;
   border: none;
+  margin-right: 10px;
+  text-align: center;
+}
+.code_container input {
+  width: 20% !important;
+}
+.btn_continer {
+  margin-top: 30px !important;
 }
 .btn_continer .btn_global {
   padding: 10px 30px;
@@ -69,6 +103,6 @@
   display: flex;
   justify-content: space-around;
 }
-.otp_page .bg_lightpink.md-right {
+.otp_page .md-right {
   padding: 50px 100px !important;
 }
