@@ -21,70 +21,169 @@
 
     <!-- Style -->
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/package_setup.css" />
+    <link rel="stylesheet" href="css/choose_packages.css" />
     <link rel="shortcut icon" href="images/favicon.png" />
     <title>PulseWiFi | Choose Packages</title>
   </head>
   <body>
-    <div class="page_wrapper package_setup">
-      <div class="d-lg-flex main_page">
+    <div class="page_wrapper packages">
+      <div class="main_page">
         <div class="logo_container">
           <img src="images/logo_white.png" alt="" class="logo" />
-        </div>
-        <div class="bg bg_lightpink md-right">
-          <div class="bg_content">
-            <form class="package_content">
-              <h2>Choose Packages</h2>
-              <p class="package_description">
-                Enter your information to continue
-              </p>
-              <div class="info_container">
-                <div class="info_line">
-                  <div class="mb-1">
-                    <label for="firstname">First Name</label>
-                    <input type="text" class="form-control" id="firstname" />
-                  </div>
-                  <div class="mb-1">
-                    <label for="Lastname">Last Name</label>
-                    <input type="text" class="form-control" id="Lastname" />
-                  </div>
-                </div>
-                <div class="info_line">
-                  <div class="mb-1">
-                    <label for="email">Email</label>
-                    <input type="text" class="form-control" id="email" />
-                  </div>
-                  <div class="mb-3">
-                    <label for="state">State</label>
-                    <input type="text" class="form-control" id="state" />
-                  </div>
-                </div>
-                <div class="info_line">
-                  <div class="mb-3">
-                    <label for="district">District</label>
-                    <input type="text" class="form-control" id="district" />
-                  </div>
-                  <div class="mb-3">
-                    <label for="pin_code">Pin Code</label>
-                    <input type="text" class="form-control" id="pin_code" />
-                  </div>
-                </div>
-              </div>
-              <div class="btn_continer">
-                <button type="submit" class="btn_global">Next</button>
-              </div>
-            </form>
-            <div class="bg_imgs">
-              <img src="images/man_antena.png" class="man_antena" alt="" />
-              <img src="images/vector_bottom.png" class="vector" alt="" />
-            </div>
-          </div>
         </div>
         <div class="contents package md-left">
           <div class="container">
             <div class="row align-items-center justify-content-center">
               <div class="package_side_bg">
-                <img src="images/package_bg.png" alt="" />
+                <img src="images/profile_bg.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bg md-right">
+          <div class="bg_content">
+            <div class="package_content">
+              <h2>Choose Packages</h2>
+              <div class="search_container">
+                <input
+                  type="text"
+                  id="phone_no"
+                  placeholder="Enter Your Mobile Number"
+                />
+                <input
+                  type="text"
+                  id="recharge_amount"
+                  placeholder="Enter Recharge Amount ($)"
+                />
+              </div>
+              <div class="package_description">
+                <p>
+                  Online Recharge for 901 to get: 1 year Disney+ Hotstar
+                  subscription, unlimited calls, 3GB/day + 48GB Extra for 7 Days
+                </p>
+              </div>
+              <div class="package_container">
+                <p class="pack_container_title">Select a Pack</p>
+                <div class="titled_item package_item">
+                  <div class="title">
+                    1yr Desney+ Hotstar Mobile & 48GB Extra
+                  </div>
+                  <div class="titled_content item_content">
+                    <div class="price_pack desktop_price"><p>$12</p></div>
+                    <div class="mobile_content">
+                      <div class="item_details">
+                        <div class="price_pack item_sub mobile_price">
+                          <p>$12</p>
+                        </div>
+                        <p class="data_value item_sub">
+                          <span class="value">50GB </span>Data
+                        </p>
+                        <p class="validity_value item_sub">
+                          <span class="value">84Days </span>Validity
+                        </p>
+                      </div>
+                      <div class="item_details">
+                        <div class="package_status item_sub">Validity</div>
+                        <img
+                          src="images/img_hero.png"
+                          class="item_sub"
+                          alt=""
+                        />
+                        <img
+                          src="images/img_movie.png"
+                          class="item_sub"
+                          alt=""
+                        />
+                        <button class="btn_global item_sub mobile_package_btn">
+                          Buy
+                        </button>
+                      </div>
+                    </div>
+                    <button class="btn_global desktop_package_btn">buy</button>
+                  </div>
+                </div>
+                <div class="titled_item package_item">
+                  <div class="title">No Outgoing SMS</div>
+                  <div class="titled_content item_content">
+                    <div class="price_pack desktop_price"><p>$12</p></div>
+                    <div class="mobile_content">
+                      <div class="item_details">
+                        <div class="price_pack mobile_price item_sub">
+                          <p>$12</p>
+                        </div>
+                        <p class="data_value item_sub">
+                          <span class="value">50GB </span>Data
+                        </p>
+                        <p class="validity_value item_sub">
+                          <span class="value">84Days </span>Validity
+                        </p>
+                      </div>
+                      <div class="item_details">
+                        <div class="package_status item_sub">
+                          No Outgoing SMS
+                        </div>
+                        <button class="btn_global mobile_package_btn item_sub">
+                          Buy
+                        </button>
+                      </div>
+                    </div>
+                    <button class="btn_global desktop_package_btn">buy</button>
+                  </div>
+                </div>
+                <div class="common_item package_item">
+                  <div class="item_content">
+                    <div class="price_pack desktop_price"><p>$12</p></div>
+                    <div class="mobile_content">
+                      <div class="item_details">
+                        <div class="price_pack mobile_price item_sub">
+                          <p>$12</p>
+                        </div>
+                        <p class="data_value item_sub">
+                          <span class="value">50GB </span>Data
+                        </p>
+                        <p class="validity_value item_sub">
+                          <span class="value">84Days </span>Validity
+                        </p>
+                      </div>
+                      <div class="item_details">
+                        <div class="package_status item_sub">
+                          No Outgoing SMS
+                        </div>
+                        <button class="btn_global item_sub mobile_package_btn">
+                          Buy
+                        </button>
+                      </div>
+                    </div>
+                    <button class="btn_global desktop_package_btn">buy</button>
+                  </div>
+                </div>
+                <div class="common_item package_item">
+                  <div class="item_content">
+                    <div class="price_pack desktop_price"><p>$12</p></div>
+                    <div class="mobile_content">
+                      <div class="item_details">
+                        <div class="price_pack item_sub mobile_price">
+                          <p>$12</p>
+                        </div>
+                        <p class="data_value item_sub">
+                          <span class="value">50GB </span>Data
+                        </p>
+                        <p class="validity_value item_sub">
+                          <span class="value">84Days </span>Validity
+                        </p>
+                      </div>
+                      <div class="item_details">
+                        <div class="package_status item_sub">
+                          No Outgoing SMS
+                        </div>
+                        <button class="btn_global item_sub mobile_package_btn">
+                          Buy
+                        </button>
+                      </div>
+                    </div>
+                    <button class="btn_global desktop_package_btn">buy</button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

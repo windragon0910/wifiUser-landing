@@ -14,6 +14,15 @@
 .profile_side_bg {
   width: -webkit-fill-available;
 }
+.profile_setup .profile_content input {
+  width: 45%;
+  margin-bottom: 10px;
+  font-size: 12px;
+  padding: 10px !important;
+  border-radius: 5px;
+  border: 1px solid grey;
+  width: -webkit-fill-available;
+}
 .profile_setup .bg_content {
   min-height: fit-content !important;
   height: fit-content;
@@ -42,6 +51,9 @@
 }
 .info_line label {
   font-weight: 500;
+}
+.info_line div {
+  display: block;
 }
 .info_line {
   display: flex;
