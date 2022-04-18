@@ -1,13 +1,17 @@
 @media (max-width: 360px) {
-  .otp_page .verify_content {
+  .otp_page .md-right .verify_content {
     width: 90% !important;
+  }
+  .otp_side_bg img {
+    width: 90% !important;
+    height: auto;
   }
 }
 @media (max-width: 560px) {
   .otp_page .bg_lightpink.md-right {
     padding: 50px 30px !important;
   }
-  .verify_content {
+  .otp_page .verify_content {
     width: 300px !important;
   }
 }
@@ -89,16 +93,13 @@
 .code_container input {
   width: 20% !important;
 }
-.btn_continer {
-  margin-top: 30px !important;
-}
-.btn_continer .btn_global {
+.btn_container .btn_global {
   padding: 10px 30px;
 }
-.btn_continer p {
+.btn_container p {
   margin: auto !important;
 }
-.btn_continer,
+.btn_container,
 .code_container {
   display: flex;
   justify-content: space-around;

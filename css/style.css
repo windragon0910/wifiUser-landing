@@ -37,21 +37,45 @@ a:hover {
   .bottom_bar img {
     margin: auto !important;
   }
+  .main_page .bg_content {
+    width: 80% !important;
+  }
 }
 @media (max-width: 560px) {
   .bottom_bar {
     padding: 10px !important;
   }
-  .download_connecting div {
+  .main_page .download_connecting div {
     margin: 5px !important;
+  }
+  .bg_content {
+    width: 80% !important;
+  }
+  /* .main_page .contents.md-left {
+    width: 100% !important;
+    height: fit-content !important;
+    overflow: hidden;
+  } */
+}
+@media (max-width: 1056px) {
+  .download_connecting div {
+    margin: 6px !important;
+  }
+}
+@media (max-width: 991.98px) {
+  .page_container .row,
+  .page_container .col-md-10,
+  .page_container {
+    padding-top: 0 !important;
   }
   .contents.md-left {
     width: 100% !important;
     height: fit-content !important;
     overflow: hidden;
   }
-}
-@media (max-width: 991.98px) {
+  .download_connecting div {
+    margin: 10px !important;
+  }
   .bg.md-right {
     min-height: 500px;
     width: 100% !important;
@@ -63,7 +87,6 @@ a:hover {
   }
   .bg_content {
     margin: auto;
-    width: 100%;
   }
   .md-right,
   .md-left {
@@ -87,10 +110,15 @@ a:hover {
   .page_container {
     padding-top: 0 !important;
   }
+  .btn_container {
+    margin-top: 30px !important;
+  }
+  .login_page .form-control {
+    width: 100%;
+  }
   .btn_global {
     margin-left: 0 !important;
-    margin-top: 15px;
-    padding: 10px 20px !important;
+    padding: 7px 20px !important;
   }
   .phone_no_container {
     display: block !important;
@@ -115,10 +143,12 @@ a:hover {
     transform: translate(-50%, 30%);
   }
 }
-
+.login_page .form-control {
+  width: 60%;
+}
 .contents.md-left {
   width: 38%;
-  height: calc(100vh - 60px);
+  /* height: calc(100vh - 60px); */
   overflow: hidden;
 }
 .page_wrapper {
@@ -176,7 +206,7 @@ a:hover {
 }
 .greeting {
   color: white;
-  font-weight: bold;
+  font-weight: 400;
   font-size: 18px;
   background: url(../images/msg_bg.png) no-repeat center center;
   background-size: unset;
@@ -190,7 +220,7 @@ a:hover {
   width: 80px;
   height: auto;
 }
-.main_page .md-right {
+.md-right {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -202,8 +232,7 @@ a:hover {
 .page_container .col-md-10,
 .page_container {
   background-color: red;
-  padding-top: 20px;
-
+  padding-top: 10px;
   height: 100%;
 }
 .login_side_bg {
@@ -234,15 +263,17 @@ a:hover {
   justify-content: space-between;
 }
 .download_connecting div {
-  padding: 3px;
   background-color: black;
-  margin: 3px;
+  margin: 8px;
 }
 .download_connecting a {
   padding: 2px;
   text-align: center;
   background-color: black;
   text-decoration: none;
+}
+.login_page .download_connecting {
+  margin-bottom: 50px;
 }
 .download_connecting {
   display: flex;
@@ -279,6 +310,7 @@ a:hover {
   margin-left: auto;
   margin-right: 15px;
   display: flex;
+  flex-direction: row !important;
   justify-content: flex-end;
   text-align: center;
   padding: 0 !important;
@@ -301,17 +333,20 @@ a:hover {
   width: -webkit-fill-available;
   border: none;
 }
+.login_page .btn_container {
+  margin-top: 0 !important;
+}
 .btn_global {
   background-color: black;
   text-align: center;
   color: white;
   font-size: 18px;
-  padding: 10px;
+  padding: 7px 10px;
   margin-left: 15px;
   border: none;
 }
 .phone_no_container {
-  display: flex;
+  display: flex !important;
   justify-content: space-between;
 }
 .main_page input[type="number"]::-webkit-outer-spin-button,
