@@ -89,7 +89,6 @@ div.content {
   margin-left: 220px;
   padding: 7px 10px;
   background: #FFF1F1;
-  height: calc(100vh - 60px);
 }
 
 .logo-side{
@@ -134,22 +133,20 @@ div.content {
 .main-content{
   text-align: center;
   margin: auto;
+  width: 40%;
 }
 
 .main-top {
   background: #FF2431;
-  width: fit-content;
   margin: auto;
 }
 
 .main-top img{
-  width: 400px;
-  height: 300px;
+  width: 100%;
 }
 
 .main-bottom {
   background: white;
-  width: 400px;
   margin: auto;
 }
 
@@ -176,7 +173,7 @@ div.content {
   text-align: center;
   font-size: 14px;
   padding: 6px;
-  width: 270px;
+  width: 80%;
   margin: auto;
 }
 
@@ -249,15 +246,14 @@ div.content {
   border: solid;
   border-color: red;
   border-radius: 10px;
-  margin-top: 13px;
-  margin-right: 20px;
+  margin: auto;
 }
 
 .line {
   width: 2px;
   height: 36px;
   background: #072653;
-  margin: 0px 5px;
+  margin: auto 5px auto 5px;
 }
 
 .left-payment-text {
@@ -355,16 +351,32 @@ div.content {
   color: red;
 }
 
+.d-flex img {
+  height: fit-content;
+  margin: auto 0 auto 10px;
+}
+
+.arrow-bottom {
+  height: fit-content;
+  margin: auto 0;
+}
+
+.left-payment-content-mobile {
+  display: none;
+}
+
+.navbar {
+  background: red;
+  display: none;
+}
+
 /* ---------------------------------- */
 
 @media screen and (max-width: 991.98px) {
   .sidebar {
-    width: 100%;
-    height: auto;
-    position: relative;
+    display: none;
   }
 
-  .sidebar a {float: left;}
   div.content {margin-left: 0;}
 
   .bottom_bar {
@@ -379,5 +391,116 @@ div.content {
     margin-bottom: 20px;
     display: flex;
     justify-content: center !important;
+  }
+
+  .main-content{
+    text-align: center;
+    margin: auto;
+    width: 60%;
+  }
+
+  .payment-content {
+    margin: 40px 10px;
+    display: block;
+    width: 100%;
+  }
+
+  .left-content {
+    margin: auto;
+    width: 96%;
+  }
+
+  .right-content {
+    margin: auto;
+    width: 96%;
+  }
+
+  .left-payment-content {
+    display: none;
+  }
+
+  .left-payment-content-mobile {
+    background: white;
+    margin: 20px 20px 10px 0px;
+    padding: 15px 3% 15px 15px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navbar {
+    background: red;
+    display: block;
+  }
+
+  .header-item {
+    margin: 5px 0 auto 10px;
+  }
+
+  .header-item-color:focus,
+  .header-item-color:active,
+  .header-item-color:hover,
+  .header-item-color {
+    color: white;
+  }
+
+  .nav-body {
+    background: red;
+    color: white;
+  }
+
+  .nav-item {
+    padding: 10px 20px 10px 20px;
+  }
+
+  .nav-item-first {
+    padding: 20px 20px 10px 20px;
+  }
+
+  .logo_container_mobile {
+    position: absolute;
+    top: 0;
+    left: 70px;
+    padding: 14px;
+  }
+
+  .header {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+
+  .language{
+    font-size: 14px;
+    display: none;
+  }
+
+  .header-arrow-bottom{
+    margin-right: 35px;
+    display: none;
+  }
+
+  .bell{
+    color: white;
+    margin-right: 20px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .bell-dot{
+    position: absolute;
+    background: black;
+    width: 7px;
+    height: 7px;
+    border-radius: 5px;
+    top: 0;
+    right: 50px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .main-content{
+    text-align: center;
+    margin: auto;
+    width: 80%;
   }
 }
