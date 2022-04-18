@@ -241,8 +241,18 @@ div.content {
 }
 
 .select-option {
-  width: 13px;
-  height: 13px;
+  width: 10px;
+  height: 10px;
+  border: solid;
+  border-color: red;
+  border-radius: 10px;
+  margin: auto;
+  border-width: 1px;
+}
+
+.select-option-active {
+  width: 10px;
+  height: 10px;
   border: solid;
   border-color: red;
   border-radius: 10px;
@@ -456,6 +466,13 @@ div.content {
     padding: 20px 20px 10px 20px;
   }
 
+  .nav-body a.active {
+    background-color: white;
+    color: black;
+    padding: 10px 15px;
+    margin-left: -15px;
+  }
+
   .logo_container_mobile {
     position: absolute;
     top: 0;
@@ -494,6 +511,12 @@ div.content {
     border-radius: 5px;
     top: 0;
     right: 50px;
+  }
+
+  .right-content {
+    margin: auto;
+    width: 96%;
+    margin-top: 30px;
   }
 }
 
