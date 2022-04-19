@@ -6,12 +6,21 @@
     margin-right: 10px !important;
   }
 }
+@media (min-width: 1296px) {
+  .package_description {
+    font-size: 12px !important;
+  }
+}
 @media (max-width: 991.98px) {
   .main_page {
     display: block !important;
   }
+  .package_side_bg img {
+    content: url("../images/mobile_profile_left_bg.png") !important;
+  }
   .mobile_content {
     padding: 10px 30px !important;
+    width: 100%;
   }
   .item_details {
     display: flex;
@@ -35,7 +44,7 @@
   }
   .main_page .md-left {
     width: 100%;
-    padding: 100px 0 0 !important;
+    padding: 60px 0 0 !important;
     min-width: 100% !important;
   }
   .page_container {
@@ -75,7 +84,7 @@
   height: auto;
 }
 .package_side_bg {
-  width: -webkit-fill-available;
+  width: 100%;
 }
 .packages .main_page .bg_content {
   min-height: fit-content !important;
@@ -99,8 +108,8 @@
 .search_container input {
   width: 48%;
   margin-bottom: 10px;
-  font-size: 12px;
-  padding: 15px 10px !important;
+  font-size: 16px;
+  padding: 10px !important;
   border-radius: 5px;
   border: 1px solid grey;
 }
@@ -130,6 +139,7 @@
   top: 30px;
   left: 0;
   border-top-left-radius: 18px;
+  width: 100%;
 }
 .item_content {
   background-color: #fff1f1;
@@ -203,7 +213,7 @@
   background-color: white;
 }
 .titled_item.package_item {
-  min-height: 130px !important;
+  min-height: 140px !important;
 }
 .package_item {
   width: 100%;
@@ -219,8 +229,11 @@
 .price_pack p {
   margin: auto;
 }
+img.item_sub {
+  margin: auto 20px auto 0;
+}
 .item_sub {
-  margin-right: 30px !important;
+  margin-right: 20px !important;
 }
 .titled_content .desktop_price {
   border-top-left-radius: 18px;

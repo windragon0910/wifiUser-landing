@@ -1,3 +1,8 @@
+@media (max-width: 560px) {
+  .reminder .bg.md-right {
+    padding: 100px 50px !important;
+  }
+}
 @media (max-width: 991.98px) {
   .reminder_download_str {
     margin: 20px auto 10px !important;
@@ -9,6 +14,13 @@
   .reminder .bg {
     padding: 150px 100px !important;
   }
+  .reminder_download_str {
+    margin: 50px auto 10px !important;
+  }
+
+  .reminder_content {
+    width: auto !important;
+  }
 }
 .reminder_download_str {
   text-align: left;
@@ -17,7 +29,7 @@
   font-weight: 900;
   padding: 20px;
   font-family: sans-serif;
-  margin: 40px auto 10px;
+  margin: 80px auto 10px;
   width: fit-content;
 }
 .reminder_download_str a {
@@ -30,9 +42,6 @@
   text-align: left;
   padding: 0 30px;
 }
-.reminder .contents {
-  padding: 10px 0 0;
-}
 .reminder_side_bg {
   z-index: 1;
   margin-top: 30px;
@@ -44,9 +53,10 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 350px;
+  width: -webkit-fill-available;
   height: fit-content;
   margin: auto;
+  width: 500px;
 }
 .code_container input {
   padding: 10px;
@@ -75,6 +85,9 @@
   font-size: 18px !important;
   font-weight: bold;
 }
-.reminder .bg {
-  padding: 50px 100px;
+.header {
+  position: absolute;
+  display: flex;
+  right: 0;
+  top: 0;
 }

@@ -40,6 +40,10 @@ a:hover {
   .main_page .bg_content {
     width: 80% !important;
   }
+  .bg_imgs img {
+    width: 50% !important;
+    height: auto !important;
+  }
 }
 @media (max-width: 560px) {
   .bottom_bar {
@@ -110,17 +114,17 @@ a:hover {
   .page_container {
     padding-top: 0 !important;
   }
-  .btn_container {
+  .login_page .phone_no_container .btn_container {
     margin-top: 30px !important;
   }
   .login_page .form-control {
-    width: 100%;
+    width: 100% !important;
   }
   .btn_global {
     margin-left: 0 !important;
     padding: 7px 20px !important;
   }
-  .phone_no_container {
+  .login_page .phone_no_container {
     display: block !important;
     text-align: left;
   }
@@ -147,7 +151,7 @@ a:hover {
   width: 60%;
 }
 .contents.md-left {
-  width: 38%;
+  width: 38% !important;
   /* height: calc(100vh - 60px); */
   overflow: hidden;
 }
@@ -161,7 +165,7 @@ a:hover {
 .bg_lightpink {
   position: relative;
   background-color: #fff1f1;
-  z-index: -2;
+  /* z-index: -2; */
 }
 .bg_imgs {
   max-width: 100%;
@@ -203,6 +207,7 @@ a:hover {
 .phone_info_div {
   background: white;
   padding: 20px;
+  z-index: 10;
 }
 .greeting {
   color: white;
@@ -210,9 +215,8 @@ a:hover {
   font-size: 18px;
   background: url(../images/msg_bg.png) no-repeat center center;
   background-size: unset;
-  z-index: 1;
+  z-index: 10;
   padding: 15px 40px 50px;
-  z-index: 0;
   height: 180px;
   width: 300px;
 }
@@ -232,7 +236,7 @@ a:hover {
 .page_container .col-md-10,
 .page_container {
   background-color: red;
-  padding-top: 10px;
+  padding-top: 10px !important;
   height: 100%;
 }
 .login_side_bg {
@@ -332,6 +336,9 @@ a:hover {
   font-size: 16px;
   width: -webkit-fill-available;
   border: none;
+}
+.btn_container {
+  margin-top: 30px;
 }
 .login_page .btn_container {
   margin-top: 0 !important;

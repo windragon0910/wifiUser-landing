@@ -1,8 +1,23 @@
+@media (max-width: 560px) {
+  .connected .conn .connected_str {
+    padding: 0 !important;
+  }
+  .connected .conn .connected_description {
+    padding: 0 !important;
+  }
+  .connected .conn {
+    padding: 50px 0px !important;
+  }
+  .connected .main_page {
+    padding: 50px 30px !important;
+    height: fit-content;
+  }
+}
 @media (max-width: 991.98px) {
   .connected_str {
     margin: 20px auto 10px !important;
   }
-  .connected .main_page {
+  .main_page {
     padding: 300px auto !important;
     height: fit-content;
   }
@@ -12,6 +27,9 @@
     height: auto !important;
     bottom: 0 !important;
     right: 0 !important;
+  }
+  .conn {
+    padding: 50px 20px !important;
   }
 }
 .connected_str {
@@ -50,7 +68,6 @@
   background: red;
   height: fit-content;
   padding: 50px;
-  z-index: -2;
   position: relative;
   text-align: center;
   display: flex;
@@ -61,7 +78,6 @@
   height: 90%;
   width: auto;
   margin: auto;
-  z-index: -1;
   bottom: 0;
   right: 0;
 }
